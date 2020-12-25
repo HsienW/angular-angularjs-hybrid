@@ -7,7 +7,9 @@ import {Router, NavigationEnd} from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
   title = 'I\'m angular8 root';
+  isNg8 = true;
 
   constructor(
     private router: Router,
@@ -24,7 +26,9 @@ export class AppComponent implements OnInit {
 
         if (route.url.match(/angular8/)) {
           angular1RootDom.style.display = 'none';
+          this.isNg8 = true;
         } else {
+          this.isNg8 = false;
           angular1RootDom.style.display = 'block';
         }
       }
