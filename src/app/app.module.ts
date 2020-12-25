@@ -24,7 +24,7 @@ import {AppRoutingModule} from './app-routing.module';
 })
 export class AppModule {
   constructor(private upgrade: UpgradeModule) {
-    if (document.getElementById('angular1-root')) {
+    if (document.getElementById('angular1Root')) {
       this.upgrade.bootstrap(document.querySelector('#angular1'), ['angular1']);
     }
   }

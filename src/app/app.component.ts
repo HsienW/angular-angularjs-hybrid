@@ -17,11 +17,15 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe((route) => {
       if (route instanceof NavigationEnd) {
-        const avatar1RootDom = document.getElementById('avatar1');
-        if (route.url.match(/avatar2/)) {
-          avatar1RootDom.style.display = 'none';
+        const angular1RootDom = document.getElementById('angular1Root');
+
+        console.log('查看查看查看查看查看');
+        console.log(route);
+
+        if (route.url.match(/angular8/)) {
+          angular1RootDom.style.display = 'none';
         } else {
-          avatar1RootDom.style.display = 'block';
+          angular1RootDom.style.display = 'block';
         }
       }
     });
