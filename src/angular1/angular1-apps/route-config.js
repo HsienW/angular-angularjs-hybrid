@@ -7,15 +7,16 @@
 
     $stateProvider
       .state('login', {
-        templateUrl: '/angular1/avt1-apps/login/login.html',
+        templateUrl: '/angular1/angular1-apps/login/login.html',
         url: '/login',
+        controller: function () {}
       })
       .state('home', {
-        templateUrl: '/angular1/avt1-apps/home/home.html',
+        templateUrl: '/angular1/angular1-apps/home/home.html',
         url: '/home',
       })
 
-    // $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 
     // $locationProvider.html5Mode({
     //   enabled: true,

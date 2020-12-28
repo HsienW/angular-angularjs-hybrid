@@ -12,6 +12,7 @@
   <script src="angular1/bower_components/angular1.4.8/angular-sanitize.min.js"></script>
   <script src="angular1/bower_components/angular1.4.8/angular-message.min.js"></script>
   <script src="angular1/bower_components/angular1.4.8/angular-touch.min.js"></script>
+<!--  <script src="angular1/bower_components/angular1.4.8/angular-route.min.js"></script>-->
   <script src="angular1/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="angular1/angular1-apps/route-config.js"></script>
 
@@ -21,8 +22,13 @@
 <!-- angular8 root -->
 <app-root></app-root>
 
+
+<!--if (document.getElementById('angular1Root')) {-->
+<!--this.upgrade.bootstrap(document.querySelector('#angular1Root'), ['angular1']);-->
+<!--}-->
+
 <!-- angular1 root -->
-<div id="angular1Root" ng-app="angular1">
+<div id="angular1Root">
   <div ui-view></div>
 </div>
 
